@@ -4,7 +4,7 @@
 
 MINE is designed to direct a share of trading fees from a MINE/USDC launch pool to eligible holders in USDC. The project site explains the proposed fee model and provides an interactive simulator.
 
-[Visit MINE on Arc](https://mineonarc.com/) · [How it works](https://mineonarc.com/how-it-works)
+[Visit MINE on Arc](https://mineonarc.com/) · [How it works](https://mineonarc.com/how-it-works) · [Follow @Mine_Usd on X](https://x.com/Mine_Usd)
 
 ## How the fees are routed
 
