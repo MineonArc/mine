@@ -20,7 +20,9 @@ Verify the first successful USDC payout to an eligible holder or batch of holder
 
 ### Post-Quantum Verified Receipts
 
-**Status · Planned**
+**Status · Test demo available. Production verification is planned.**
+
+The [Proof Demo](https://mineonarc.com/post-quantum/) uses a real post-quantum signature on a test record. It demonstrates that the original verifies and that the same signature fails after an amount is changed.
 
 Publish an open verifier for signed MINE launch records and payout receipts. The verifier will report the MINE signature and the Arc evidence as separate results. Start with clearly labelled test fixtures, then apply the format to a confirmed payout once the receipt verifier and the key publication process are reviewed. Publish the on-chain evidence as soon as the payout is confirmed.
 

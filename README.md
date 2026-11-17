@@ -26,6 +26,7 @@ With 100,000 USDC in hypothetical daily volume and a constant 0.125% eligible ba
 | [Fee model and simulator](MODEL.md) | Fee denominators, eligibility, and the worked example |
 | [Roadmap](ROADMAP.md) | Launch, first verified payout, and public protocol data |
 | [On-chain verification](PROOF.md) | Where deployment evidence and verified payout receipts will be recorded |
-| [Post-Quantum Verified Receipts](POST-QUANTUM.md) | Planned public verification for signed MINE records |
+| [Post-quantum protection](POST-QUANTUM-PROTECTION.md) | What the public demo verifies and the commitments guiding further development |
+| [Post-Quantum Verified Receipts](POST-QUANTUM.md) | Technical design, delivery stages, and criteria for signed production records |
 
 Deployment parameters and the first holder payout are pending verification. Follow the [Proof panel](https://mineonarc.com/#protocol-proof) for the public status.

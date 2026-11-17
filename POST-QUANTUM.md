@@ -1,11 +1,23 @@
 # Post-Quantum Verified Receipts
 
-**Status · Planned**  
+**Status · Test demo available. Production receipt verification is planned.**  
 **Roadmap milestone · Prove the first payout**
 
 [Project overview](README.md) · [Roadmap](ROADMAP.md) · [On-chain verification](PROOF.md)
 
 MINE plans to publish post-quantum signatures for its official launch records and USDC payout receipts. Anyone will be able to download a record, verify who published it, and compare its claims with Arc. The planned verifier will work without connecting a wallet.
+
+## Public proof demo
+
+The [Proof Demo](https://mineonarc.com/post-quantum/) verifies one signed test receipt in the browser. Its original amount is 0.30 USDC. Changing it to 0.90 USDC preserves the original signature so the altered record fails verification. The test key is unrelated to future production keys. The sample carries the `demo` environment and has no associated on-chain payment.
+
+You can download `receipt.json` from the demo and run the [independent Node verifier](verify-demo.mjs) using Node.js 24.8 or later, with OpenSSL support for SLH-DSA.
+
+```sh
+node verify-demo.mjs receipt.json
+```
+
+See [MINE's approach to post-quantum protection](POST-QUANTUM-PROTECTION.md) for the public commitment and the intended protection boundaries.
 
 ## What people will verify
 
