@@ -20,6 +20,17 @@ The verification register below covers MINE-specific deployment and payouts on *
 2. Match the payout to the published MINE launch and its escrow contract.
 3. Inspect the USDC transfer logs. Match the token contract, recipient and amount to the receipt. For a batch, check which transfers make up the reported total.
 
+## Verify a signed MINE record
+
+**Status · Planned**
+
+The [Post-Quantum Verified Receipts design](POST-QUANTUM.md) adds a publisher signature to official MINE records. The public verifier will show two independent results.
+
+- **MINE signature** verifies the integrity and origin of the record using a known project key.
+- **Arc evidence** checks the record against the published MINE launch, the transaction receipt and the relevant USDC movements.
+
+Prototype data will be labelled as test data. A live receipt will show the network, block, transaction and the transfer or transfers it covers.
+
 ## Verify public metrics
 
 | Metric | Definition |
