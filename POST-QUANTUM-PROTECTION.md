@@ -1,7 +1,7 @@
 # Preparing for a Post-Quantum Future
 
 **MINE on Arc · Public commitment and project scope**  
-**Status · A signed test receipt is available. Production receipt verification is planned.**
+**Status · An interactive signed-receipt demo is available. Production receipt verification is planned.**
 
 ## Why we are doing this
 
@@ -11,9 +11,9 @@ We commit to giving this work our full engineering effort. We will test it rigor
 
 ## What you can test today
 
-Open the [Post-Quantum Proof Demo](https://mineonarc.com/post-quantum/). The receipt shows **0.30 USDC**. Verify it, change one digit to **0.90 USDC**, and verify it again. The demo checks both versions against the same **SLH-DSA-SHA2-128s** signature. The original verifies. The modified receipt fails. Restoring the original amount makes the receipt verify again.
+Open the [Post-Quantum Proof Demo](https://mineonarc.com/post-quantum/), choose the original USDC amount, and type a different value in the second field. Choose **Sign & verify**. The browser signs the original with a temporary **SLH-DSA-SHA2-128s** key and checks the test value against the same signature. The original passes, the altered amount fails, and **Restore original** shows a valid result again.
 
-The browser checks the signature locally from the sample bytes, the signature, and the public test key. The demo is read-only and requires no wallet connection. The receipt uses test data and carries no claim of an Arc payment. For an independent check, download the sample and use the [Node verifier](verify-demo.mjs). The [technical design](POST-QUANTUM.md) documents the format and references.
+The demo runs locally, requires no wallet, and represents no on-chain payment. Under **Technical details**, download the signed test receipt to reproduce the result with the [Node verifier](verify-demo.mjs). The [technical design](POST-QUANTUM.md) documents the format and references.
 
 ## What MINE will work toward
 
