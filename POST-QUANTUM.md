@@ -9,12 +9,14 @@ MINE plans to publish post-quantum signatures for its official launch records an
 
 ## Public proof demo
 
-The [Proof Demo](https://mineonarc.com/post-quantum/) verifies one signed test receipt in the browser. Its original amount is 0.30 USDC. Changing it to 0.90 USDC preserves the original signature so the altered record fails verification. The test key is unrelated to future production keys. The sample carries the `demo` environment and has no associated on-chain payment.
+The [Proof Demo](https://mineonarc.com/post-quantum/) lets you choose the original USDC amount and enter a separate test amount. Select **Sign & verify** to create a test receipt for the original amount with a temporary SLH-DSA-SHA2-128s key in your browser. The demo checks the test amount against that same signature. An edited amount makes the receipt fail verification. Select **Restore original** to see it pass again.
 
-You can download `receipt.json` from the demo and run the [independent Node verifier](verify-demo.mjs) using Node.js 24.8 or later, with OpenSSL support for SLH-DSA.
+The receipt carries the `demo` environment and uses a temporary key unrelated to production keys. It requires no wallet connection and represents no on-chain payment.
+
+Under **Technical details**, select **Download signed receipt**. Run the [independent Node verifier](verify-demo.mjs) with Node.js 24.8 or later and OpenSSL support for SLH-DSA.
 
 ```sh
-node verify-demo.mjs receipt.json
+node verify-demo.mjs mine-demo-receipt.json
 ```
 
 See [MINE's approach to post-quantum protection](POST-QUANTUM-PROTECTION.md) for the public commitment and the intended protection boundaries.
